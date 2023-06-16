@@ -1,0 +1,17 @@
+import React from 'react'
+import Nav from './Nav'
+
+const Navbar = ({ children }: {
+    children: React.ReactNode,
+  }) => {
+  return (
+    <div className='h-full'>
+        <Nav/>
+        <main className="h-full">
+            {children}
+        </main>
+    </div>
+  )
+}
+
+export default Navbar
