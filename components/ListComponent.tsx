@@ -33,7 +33,7 @@ const ListComponent: React.FC<ListComponentProps> = ({products, loadMore}) => {
     >
       {({ onItemsRendered, ref }) => (
         <List
-            height={800}
+            height={700}
             itemCount={products?.limit}
             itemSize={35}
             width='100%'
