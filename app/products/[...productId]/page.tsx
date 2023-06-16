@@ -39,17 +39,17 @@ const Prdct = () => {
             <ImageComponent product={product!} />
           </div>
           <div className='col-span-1 rounded-lg overflow-hidden bg-gray-300 w-full p-2 mx-auto'>
-            <h1 className='text-2xl'>{product?.title}</h1>
-            <p className='text-xs'>by {product?.brand}</p>
+            <h1 className='text-2xl font-semibold'>{product?.title}</h1>
+            <p className='text-sm'>by {product?.brand}</p>
             <StarRating rating={product?.rating!}/>
-            <p className='text-xs text-gray-500 mt-1'>Price: <span className='text-base text-black'>${product?.price}</span>
+            <p className='text-xs text-gray-500 mt-1'>Price: <span className='text-xl text-black'>${product?.price}</span>
               <span className='line-through ml-2'>${(product?.price! + (product?.price! * product?.discountPercentage!/100)).toFixed(2)}</span>
-              <span className='text-xs font-semibold text-black ml-2'>NOW {product?.discountPercentage}% OFF</span>
+              <span className='text-lg font-semibold text-black ml-2'>NOW {product?.discountPercentage}% OFF</span>
             </p>
-            <p className='text-xs text-gray-500 mt-3'>Description</p>
-            <p>{product?.description}</p>
-            <p className='text-xs mt-3 text-gray-600'>Stock: <span className='text-black'>{product?.stock}</span></p>
-            <p className='text-xs mt-2 text-gray-600'>Category: {product?.category}</p>
+            <p className='text-base text-gray-500 mt-3'>Description</p>
+            <p className='text-lg'>{product?.description}</p>
+            <p className='text-base mt-3 text-gray-600'>Stock: <span className='text-black'>{product?.stock}</span></p>
+            <p className='text-base mt-2 text-gray-600'>Category: {product?.category}</p>
           </div>
         </div>
     </div>
