@@ -8,7 +8,7 @@ import ImageComponent from '@/components/ImageComponent'
 import fetchProducts from '@/actions/fetchProducts'
 
 
-const Prod = () => {
+const Prdct = () => {
   const [product, setProduct] = useState<Product>()
   const [notfound, setNotFound] = useState(false)
   
@@ -32,7 +32,7 @@ const Prod = () => {
   }
 
   return (
-    <div className='min-h-screen max-w-[800px] mx-auto py-2 px-4'>
+    <div className='min-h-screen max-w-[1200px] mx-auto py-2 px-4'>
         <div className='grid grid-cols-1 gap-2 md:gap-1 sm:grid-cols-3'>
           <div className='col-span-1 sm:col-span-2 rounded-lg overflow-hidden'>
             <ImageComponent product={product!} />
@@ -55,4 +55,4 @@ const Prod = () => {
   )
 }
 
-export default Prod
+export default Prdct
