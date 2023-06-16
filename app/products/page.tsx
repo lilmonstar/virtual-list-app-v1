@@ -25,7 +25,7 @@ const Prdcts = () => {
   },[])
 
   return (
-    <div className="min-h-screen max-w-[1200px] mx-auto py-2 px-4">
+    <div className="min-h-[calc(100vh-50px)] max-w-[1200px] mx-auto py-2 px-4">
       <div className="mb-1">Products</div>
       <ListComponent products={products!} loadMore={loadMore}/>
     </div>

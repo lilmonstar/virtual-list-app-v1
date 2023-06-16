@@ -32,7 +32,8 @@ const Prdct = () => {
   }
 
   return (
-    <div className='min-h-screen max-w-[1200px] mx-auto py-2 px-4'>
+    <div className='min-h-[calc(100vh-50px)] max-w-[1200px] mx-auto py-2 px-4'>
+      <div className="mt-2 mb-10 text-xl md:text-2xl font-semibold">Item {params.productId}</div>
         <div className='grid grid-cols-1 gap-2 md:gap-1 sm:grid-cols-3'>
           <div className='col-span-1 sm:col-span-2 rounded-lg overflow-hidden'>
             <ImageComponent product={product!} />
