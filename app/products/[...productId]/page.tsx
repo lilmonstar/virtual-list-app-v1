@@ -8,7 +8,7 @@ import ImageComponent from '@/components/ImageComponent'
 import fetchProducts from '@/actions/fetchProducts'
 
 
-const product = () => {
+const Prod = () => {
   const [product, setProduct] = useState<Product>()
   const [notfound, setNotFound] = useState(false)
   
@@ -55,4 +55,4 @@ const product = () => {
   )
 }
 
-export default product
+export default Prod

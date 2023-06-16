@@ -6,7 +6,7 @@ import ListComponent from "@/components/ListComponent"
 import { Products } from "@/interface/Products"
 
 
-const Products = () => {
+const Prdcts = () => {
   const [products, setProducts] = useState<Products>()
   const [count, setCount] = useState(10)
   const DATA_URL = `https://dummyjson.com/products?limit=${count}`
@@ -32,4 +32,4 @@ const Products = () => {
   )
 }
 
-export default Products
+export default Prdcts
